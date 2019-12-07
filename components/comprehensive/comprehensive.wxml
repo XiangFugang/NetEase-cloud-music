@@ -1,0 +1,52 @@
+<view class="single_shell">
+  <view class="single_text">单曲</view>
+  <view class="single_img">
+    <view class="single_icon">
+      <image src="../../img/bofang.png" class="img"></image>
+    </view>
+    <view class="plye">播放全部</view>
+  </view>
+</view>
+
+<view class="song_sheet_shell">
+  <view class="song_sheet-for" wx:for="{{data}}" wx:key="{{index}}">
+    <view class="song_sheet_content">
+      <view class="song_sheet_text">
+        <view class="song_sheet_name">{{item.name}}</view>
+        <view class="song_sheet_cf">{{item.data}}</view>
+      </view>
+      <view class="icon">
+        <view class="icon_img">
+          <image src="../../img/bofangshu.png" class="icon_img_1"></image>
+        </view>
+        <view class="icon_1">
+          <image src="../../img/diandian.png" class="icon_img_1"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="more">
+  <view class="more_text">查看更多同名歌曲</view>
+  <view class="more_img">
+    <image src="../../img/jiantouyou.png" class="more_icon"></image>
+  </view>
+</view>
+<view class="directseeding">歌单</view>
+
+<view class="songsheet_shell">
+  <view wx:for="{{resul.playList.playLists}}" wx:key="{{index}}" class="songsheet_for">
+    <view>
+      <image src="{{item.coverImgUrl}}" class="songsheet_img"></image>
+    </view>
+    <view class="songsheet_text">
+      <view class="songsheet_name">{{item.name}}</view>
+      <view class="songsheet_dv">
+        <view class="songsheet_trackCount">{{item.trackCount}}首</view>
+        <view class="songsheet_nickname">by{{item.creator.nickname}}</view>
+        <view class="songsheet_playCount">播放{{item.playCount}}</view>
+      </view>
+    </view>
+  </view>
+</view>

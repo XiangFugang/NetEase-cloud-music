@@ -1,0 +1,27 @@
+<view>
+  <van-cell-group>
+    <van-field value="{{ phone }}" error-message='{{phoneerr}}' clearable label="手机号" icon="question-o" placeholder="请输入手机号" left-icon="phone-o" bind:click-icon="onClickIcon" bind:change='onClickIcon' bind:blur="blurclick" bind:focus="focuscilck" />
+
+    <van-field value="{{ password }}" type="{{type?'password':'text'}}" label="密码" placeholder="请输入密码" border="{{ false }}" left-icon="closed-eye" right-icon="eye-o" bind:click-icon="goToPassword" bind:change="onclickpassword" />
+  </van-cell-group>
+  <view class="Verification_shell">
+    <van-cell-group>
+      <van-field value="{{ sms }}" center clearable label="短信验证码" placeholder="请输入短信验证码" border="{{ false }}" left-icon="envelop-o" bind:change="onclicksms">
+      </van-field>
+    </van-cell-group>
+    <view class="Verification_text">
+      <text class="Verification" bindtap="goToVerificationCode">发送验证码</text>
+    </view>
+  </view>
+  <van-cell-group>
+    <van-field value="{{ value }}" placeholder="请输入用户名" label="昵称" border="{{ false }}" left-icon="smile-o" bind:change="onChange" />
+  </van-cell-group>
+  <view class="Submission">
+    <view>
+      <view class="sign_text" bindtap="gosign">前往登录</view>
+    </view>
+    <view>
+      <view class="register_text" bindtap='onclickregister'>立即注册</view>
+    </view>
+  </view>
+</view>

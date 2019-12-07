@@ -1,0 +1,135 @@
+<view>
+  <view wx:if="{{show}}">
+    <view class="shell">
+      <view>
+        <van-search value="{{ value }}" field-class="adfvbrfaa" placeholder="请输入搜索关键词" use-action-slot use-right-icon-slot bind:search="onSearch" bind:focus="focus">
+          <view slot="action" bind:tap="onSearch" class="search">搜索</view>
+          <view slot="label" bind:tap="onSearch" class="text">音乐馆</view>
+        </van-search>
+      </view>
+      <view class="imge">
+        <image src="../../img/music1.png" class="picturesize"></image>
+      </view>
+    </view>
+    <!-- 轮播图 -->
+    <view>
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+        <swiper-item wx:for="{{banners}}" wx:key="{{index}}">
+          <view wx:if="{{item.imageUrl}}">
+            <image src="{{item.imageUrl}}" class="imges"></image>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+    <!-- 导航菜单 -->
+    <view class="menu_shell">
+      <view>
+        <view class="menu_dv">
+          <image src="../../img/rili.png" class="menu_img"></image>
+        </view>
+        <view class="menu_text">每日推荐</view>
+      </view>
+      <view>
+        <view class="menu_dv" bindtap="songCategory">
+          <image src="../../img/liebiao.png" class="menu_img"></image>
+        </view>
+        <view class="menu_text">歌单</view>
+      </view>
+      <view>
+        <view class="menu_dv">
+          <image src="../../img/paihangbang.png" class="menu_img"></image>
+        </view>
+        <view class="menu_text">排行榜</view>
+      </view>
+      <view bindtap="Radiosquare">
+        <view class="menu_dv">
+          <image src="../../img/yinyue.png" class="menu_img"></image>
+        </view>
+        <view class="menu_text">电台</view>
+      </view>
+      <view>
+        <view class="menu_dv">
+          <image src="../../img/huifang.png" class="menu_img"></image>
+        </view>
+        <view class="menu_text">直播</view>
+      </view>
+    </view>
+    <!-- 推荐歌单 -->
+    <view class="Recommend_shell">
+      <view class="Recommend_sheet">推荐歌单</view>
+      <view class="Recommend_square" bindtap="songCategory">歌单广场</view>
+    </view>
+    <!-- 推荐歌单内容 -->
+    <view class="music_shell">
+      <view wx:for="{{result}}" wx:key="{{index}}" class="music_dv" bindtap="goTosongsheet" data-id="{{item.id}}" data-copywriter="{{item.copywriter}}">
+        <view wx:if="{{item.picUrl}}">
+          <image src="{{item.picUrl}}" class="music_img"></image>
+        </view>
+        <view class="music_text">{{item.name}}</view>
+      </view>
+    </view>
+    <!-- 新碟 -->
+    <view class="Newdish">
+      <view>
+        <text class="Newdish_Newdish">新碟</text>
+        <text class="Newdish_music">新歌</text>
+      </view>
+      <view class="Newdish_moll" bindtap="gomoredishes">更多新碟</view>
+    </view>
+    <!-- 新碟内容 -->
+    <view class="music_shell">
+      <view wx:for="{{albums}}" wx:key="{{index}}" class="music_dv" bindtap="gotoAlbum" data-id="{{item.id}}">
+        <view wx:if="{{item.picUrl}}">
+          <image src="{{item.picUrl}}" class="music_img"></image>
+        </view>
+        <view class="music_text">{{item.name}}</view>
+      </view>
+    </view>
+    <!-- 音乐新势力 -->
+    <view class="Recommend_shell">
+      <view class="Recommend_sheet">音乐新势力</view>
+      <view class="Recommend_square" bindtap="gomusic">新音乐</view>
+    </view>
+    <!-- 音乐新势力内容 -->
+    <view class="music_shell">
+      <view wx:for="{{newmusic}}" wx:key="{{index}}" class="music_dv">
+        <view wx:if="{{item.song}}">
+          <image src="{{item.song.album.blurPicUrl}}" class="music_img" bindtap="gotoplye" data-id="{{item.id}}"></image>
+        </view>
+        <view class="music_text">{{item.name}}</view>
+      </view>
+    </view>
+    <!-- 推荐电台 -->
+    <view class="Recommend_shell">
+      <view class="Recommend_sheet">推荐电台</view>
+      <view class="Recommend_square" bindtap="Radiosquare">电台广场</view>
+    </view>
+    <!-- 推荐电台内容 -->
+    <view class="music_shell">
+      <view wx:for="{{radiostation}}" wx:key="{{index}}" class="music_dv">
+        <view wx:if="{{item.picUrl}}">
+          <image src="{{item.picUrl}}" class="music_img" bindtap="radiodetails" data-id="{{item.program.radio.id}}"></image>
+        </view>
+        <view class="music_text">{{item.name}}</view>
+      </view>
+    </view>
+    <!-- 推荐节目 -->
+    <view class="Recommend_shell">
+      <view class="Recommend_sheet">推荐节目</view>
+      <view class="Recommend_square" bindtap="more_programmes">更多节目</view>
+    </view>
+    <!-- 推荐节目内容 -->
+    <view class="music_shell">
+      <view wx:for="{{program}}" wx:key="{{index}}" class="music_dv">
+        <view wx:if="{{item.coverUrl}}">
+          <image src="{{item.coverUrl}}" class="music_img"></image>
+        </view>
+        <view class="music_text">{{item.name}}</view>
+      </view>
+    </view>
+
+  </view>
+  <view wx:else>
+    <search bind:revert="goReturn"></search>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+<view class="shell">
+  <image src="{{picUrl}}" class="shell_backgroundpicture"></image>
+</view>
+<view class="tltie_shell">
+  <view>
+    <image src="../../img/zuojiantou.png" class="tltie_img" bindtap="getreturn"></image>
+  </view>
+  <view class="list">
+    <view class="text">{{name}}</view>
+    <view class="tltie_text">{{singer}}</view>
+  </view>
+</view>
+<!-- 播放旋转图标 -->
+<view class="background_shell">
+  <view class="background_dev">
+    <view class="background_dv {{play?'':'stop'}}">
+      <view class="wallpaper_img">
+        <image src="{{picUrl}}" class="wallpaper"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 导航图标 -->
+</view>
+<view class="Label">
+  <view>
+    <image src="../../img/icon6.png" class="Label_img" wx:if="{{like}}" bindtap="like"></image>
+    <image src="../../img/icon7.png" class="Label_img" wx:else bindtap="like"></image>
+  </view>
+  <view>
+    <image src="../../img/icon5.png" class="Label_img"></image>
+  </view>
+  <view>
+    <image src="../../img/icon9.png" class="Label_img"></image>
+  </view>
+  <view>
+    <image src="../../img/Icon1.png" class="Label_img"></image>
+  </view>
+  <view>
+    <image src="../../img/icon8.png" class="Label_imges"></image>
+  </view>
+</view>
+<!-- 进度条 -->
+<view class="Progressbar_shell">
+  <view class="Time1">{{currentime}}</view>
+  <view class="Progressbar">
+    <slider block-size="12" backgroundColor="#999" selected-color="#fff" class="Progressbar_icon" value='{{startime}}' max='{{endtime}}' bindchange="slide"/>
+  </view>
+  <view class="Time2">{{duration}}</view>
+</view>
+<!-- 播放选择按钮 -->
+<view class="Playbackselection_shell">
+  <view>
+    <image wx:if="{{loop==1}}" src="../../img/icon13.png" class="Playbackselection_icon1" bindtap="loop"></image>
+    <image wx:if="{{loop==2}}" src="../../img/icon14.png" class="Playbackselection_icon1" bindtap="loop"></image>
+    <image wx:if="{{loop==3}}" src="../../img/icon12.png" class="Playbackselection_icon1" bindtap="loop"></image>
+  </view>
+  <view>
+    <image src="../../img/icon15.png" class="Playbackselection_icon2" bindtap="lastsong"></image>
+  </view>
+  <view>
+    <image wx:if="{{play}}" src="../../img/icon11.png" class="Playbackselection_icon3" bindtap="play"></image>
+    <image wx:else src="../../img/icon10.png" class="Playbackselection_icon3" bindtap="play"></image>
+
+  </view>
+  <view>
+    <image src="../../img/icon16.png" class="Playbackselection_icon4" bindtap="nextsong"></image>
+  </view>
+  <view>
+    <image src="../../img/icon17.png" class="Playbackselection_icon5"></image>
+  </view>
+</view>

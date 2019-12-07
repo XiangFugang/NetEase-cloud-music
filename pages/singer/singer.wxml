@@ -1,0 +1,16 @@
+<van-tabs active="{{ active }}" ellipsis='{{false}}'  bind:click="click">
+  <van-tab wx:for="{{singercategory}}" wx:key="{{index}}" title="{{item}}" name="{{item}}" >
+  </van-tab>
+</van-tabs>
+<scroll-view scroll-x="true" class="letter_dv">
+  <view wx:for="{{letter}}" wx:key="{{index}}" class="letter_index">{{item}}</view>
+</scroll-view>
+<!-- 歌手信息 -->
+<view class="singer">
+  <view class="singer_dv" wx:for="{{artists}}" wx:key="{{index}}">
+    <view wx:if="{{item.img1v1Url}}">
+      <image src=" {{item.img1v1Url}} " class="singer_img " bindtap="goSingerdetails" data-id="{{item.id}}"></image>
+    </view>
+    <view class="singer_name">{{item.name}}</view>
+  </view>
+</view>

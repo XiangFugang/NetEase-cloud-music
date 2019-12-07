@@ -1,0 +1,135 @@
+.search_shell {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 20rpx 0 40rpx;
+}
+
+.icon {
+  padding: 0 20rpx 0 0;
+}
+
+.icon18 {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.search {
+  flex: 1;
+  border-bottom: 4rpx solid #999;
+  color: black;
+  font-size: 35rpx;
+}
+
+.icon1 {
+  padding: 0 0 0 20rpx;
+}
+
+.icon26 {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/* 历史记录 */
+
+.History_shell {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 25rpx 0 40rpx;
+}
+
+.History_text {
+  font-size: 30rpx;
+}
+
+.History_icon {
+}
+
+.History_img {
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.History_map {
+  display: flex;
+  padding: 0 40rpx 0 40rpx;
+  white-space: nowrap;
+}
+
+.History {
+  background-color: #999;
+  border-radius: 30rpx;
+  margin-right: 20rpx;
+  padding: 0rpx 15rpx;
+  font-size: 30rpx;
+}
+
+.Hotsearch {
+  font-size: 27rpx;
+  font-weight: 700;
+  padding: 40rpx 0 0 40rpx;
+}
+
+.Hotsearch_shell {
+  padding: 0 40rpx;
+}
+
+.Hotsearch_for {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0 10rpx 0rpx;
+}
+
+.Hotsearch_left {
+  display: flex;
+}
+
+.Hotsearch_index {
+  font-size: 30rpx;
+  color: #999;
+}
+
+.color {
+  color: #f45;
+}
+
+.Hotsearch_name {
+  padding: 0 0 0 40rpx;
+}
+
+.Hotsearch_searchWord {
+  display: flex;
+}
+
+.Hotsearch_text {
+  font-size: 35rpx;
+}
+
+.weight {
+  font-weight: 700;
+}
+
+.Hotsearch_HOT {
+  font-size: 32rpx;
+  color: #f45;
+  font-weight: 700;
+  padding-left: 15rpx;
+  font-style: oblique;
+}
+
+.Hotsearch_NEW {
+  font-size: 32rpx;
+  color: green;
+  font-weight: 700;
+  padding-left: 15rpx;
+  font-style: oblique;
+}
+
+.Hotsearch_content {
+  font-size: 25rpx;
+  color: #999;
+}
+
+.Hotsearch_right {
+  font-size: 30rpx;
+  color: #999;
+}

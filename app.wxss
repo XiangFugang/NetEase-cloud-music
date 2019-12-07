@@ -1,0 +1,7 @@
+.picturesize{
+  width: 70rpx;
+  height: 70rpx;
+}
+.size{
+  font-size: 38rpx;
+}

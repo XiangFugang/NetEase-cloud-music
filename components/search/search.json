@@ -1,0 +1,16 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-tab": "../../lib/vant/tab/index",
+    "van-tabs": "../../lib/vant/tabs/index",
+    "comprehensive": "../comprehensive/comprehensive",
+    "single": "../single/single",
+    "yun-cun": "../yun-cun/yun-cun",
+    "video": "../video/video",
+    "singer": "../singer/singer",
+    "album": "../album/album",
+    "song-sheet": "../song-sheet/song-sheet",
+    "anchor-station": "../anchor-station/anchor-station",
+    "subscriber": "../subscriber/subscriber"
+  }
+}

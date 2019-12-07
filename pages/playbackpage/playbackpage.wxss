@@ -1,0 +1,186 @@
+.shell {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.shell_backgroundpicture {
+  width: 100%;
+  height: 100%;
+  filter: blur(100rpx);
+  filter: contrast(50%);
+}
+
+.tltie_shell {
+  padding: 80rpx 0 0 30rpx;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.tltie_img {
+  width: 50rpx;
+  height: 50rpx;
+  filter: brightness(100%);
+}
+
+.list {
+  padding-left: 30rpx;
+}
+
+.text {
+  margin-top: -23rpx;
+  color: #fff;
+}
+
+.tltie_text {
+  padding-top: 8rpx;
+  max-width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20rpx;
+  color: #e6e6e6;
+  letter-spacing: 2rpx;
+}
+
+.background_shell {
+  padding-top: 250rpx;
+  height: 500rpx;
+}
+
+.background_dev {
+  position: relative;
+  width: 100%;
+}
+
+.background_dv {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -250rpx;
+  width: 500rpx;
+  height: 500rpx;
+  background-color: black;
+  border-radius: 50%;
+  animation: move 22s linear infinite;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 停止 */
+
+.stop {
+  animation-play-state: paused;
+}
+
+.wallpaper_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.wallpaper {
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -175rpx;
+  margin-top: -175rpx;
+}
+
+.Label {
+  padding-top: 250rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Label_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.Label_imges {
+  width: 50rpx;
+  height: 50rpx;
+  transform: rotate(90deg);
+}
+
+.Progressbar_shell {
+  padding-top: 40rpx;
+  position: relative;
+}
+
+.Time1 {
+  position: absolute;
+  /* top: 10rpx; */
+  left: 20rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.Progressbar_icon {
+  margin: 0;
+}
+
+.Progressbar {
+  position: absolute;
+  /* top: 10rpx; */
+  left: 100rpx;
+  width: 75%;
+}
+
+.Time2 {
+  position: absolute;
+  /* top: 10rpx; */
+  right: 20rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.Playbackselection_shell {
+  padding-top: 120rpx;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Playbackselection_icon1 {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.Playbackselection_icon2 {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.Playbackselection_icon3 {
+  margin-top: -15rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.Playbackselection_icon4 {
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.Playbackselection_icon5 {
+  width: 60rpx;
+  height: 60rpx;
+}

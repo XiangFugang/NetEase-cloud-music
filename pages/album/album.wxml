@@ -1,0 +1,137 @@
+<view class="shell">
+  <image src="{{blurPicUrl}}" class="shell_backgroundpicture"></image>
+</view>
+<view class="tltie_shell">
+  <view>
+    <image src="../../img/zuojiantou.png" class="tltie_img" bindtap="getreturn"></image>
+  </view>
+  <view class="list">
+    <view class="text">专辑</view>
+  </view>
+</view>
+
+
+<view class="details">
+  <view>
+    <image src="{{blurPicUrl}}" class="details_img"></image>
+  </view>
+  <view class="right">
+    <view class="details_name">{{name}}</view>
+    <view class="details_name" wx:if="{{alias.length}}">{{alias[0]}}</view>
+    <view class="details_name" wx:else></view>
+    <view class="avatarUrl">
+      <!-- <view>
+        <image src="{{avatarUrl}}" class="avatarUrl_img"></image>
+      </view> -->
+      <view class="nickname_text">歌手：{{creators}}</view>
+      <view>
+        <image src="../../img/youjiantou.png" class="nickname_img"></image>
+      </view>
+    </view>
+    <view class="description">
+      <view class="description_text">{{description}}</view>
+      <view>
+        <image src="../../img/youjiantou.png" class="description_img"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="navigation">
+  <view>
+    <view>
+      <image src="../../img/Icon1.png" class="navigation_img"></image>
+    </view>
+    <view class="navigation_text">评论</view>
+  </view>
+  <view>
+    <view>
+      <image class="navigation_img" src="../../img/Icon2.png"></image>
+    </view>
+    <view class="navigation_text">分享</view>
+  </view>
+  <view>
+    <view>
+      <image class="navigation_img" src="../../img/Icon3.png"></image>
+    </view>
+    <view class="navigation_text">下载</view>
+  </view>
+  <view>
+    <view>
+      <image class="navigation_img" src="../../img/Icon4.png"></image>
+    </view>
+    <view class="navigation_text">多选</view>
+  </view>
+</view>
+
+
+
+
+<view class="bottom_shell">
+  <view class="explain">
+    <view class="explain_left">
+      <view>
+        <image src="../../img/bofang.png" class="play_img"></image>
+      </view>
+      <view class="play_text">播放全部
+        <text class="text_text">(共{{songs.length}}首)</text>
+      </view>
+    </view>
+    <view class="explain_right">
+      <view>
+        <image src="../../img/jiahao.png" class="Plus_img"></image>
+      </view>
+      <view class="Collection_text">收藏
+        <text class="sum_text">({{subscribedCount}})</text>
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="loop_shell">
+    <view wx:for="{{songs}}" wx:key="{{index}}" class="loop" bindtap="goToplay" data-list="{{item}}" bindtap="details" data-icon="{{item.al.picUrl}}" data-id="{{item.id}}" data-name="{{item.name}}">
+      <view class="loop_left">
+        <view class="loop_index">{{index+1}}</view>
+        <view class="loop_text">
+          <view class="Songname">{{item.name}}
+            <text class="Songname_text">{{item.alia[0]}}</text>
+          </view>
+          <view class="singer">{{item.ar[0].name}}-{{item.al.name}}</view>
+        </view>
+      </view>
+      <view class="loop_right">
+        <view wx:if="{{item.mv}}">
+          <image src="../../img/bofangshu.png" class="PlayIcon"></image>
+        </view>
+        <view>
+          <image src="../../img/diandian.png" class="hide "></image>
+        </view>
+      </view>
+    </view>
+    <view class="Bottombar"></view>
+  </view>
+</view>
+<!-- 底部播放栏 -->
+
+<view class="Playbackbar" wx:if="{{playname !==''}}" bindtap="goPlaybackpage">
+  <view class="Playbackbar_left">
+    <view class="Playbackbar_dv">
+      <image src="{{playIcon}}" class="Playbackbar_img"></image>
+    </view>
+    <view class="Lyric_text">
+      <view class="Playbackbar_text">{{playname}}</view>
+      <view class="Lyric">随便吧歌词</view>
+    </view>
+  </view>
+  <view class="Playbackbar_rigth">
+    <view class="botton_dv">
+      <image class="botton_ionc" src="../../img/bofang.png"></image>
+    </view>
+    <view class="list_dv">
+      <image class="list_ionc" src="../../img/bofangliebiao.png"></image>
+    </view>
+  </view>
+</view>

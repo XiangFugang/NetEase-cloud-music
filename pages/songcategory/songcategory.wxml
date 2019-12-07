@@ -1,0 +1,31 @@
+<!-- 顶部栏 -->
+<view class="tltie_shell">
+  <view>
+    <image src="../../img/icon18.png" class="tltie_img" bindtap="getreturn"></image>
+  </view>
+  <view class="list">
+    <view class="text">歌单</view>
+  </view>
+</view>
+<!-- 轮播图 -->
+<view class="Rotationchart">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}">
+    <swiper-item wx:for="{{banners}}" wx:key="{{index}}">
+      <view wx:if="{{item}}">
+        <image src="{{item}}" class="imges"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 宫格列表 -->
+<view class="music_shell">
+  <view wx:for="{{result}}" wx:key="{{index}}" class="music_dv" bindtap="goTosongsheet" data-id="{{item.id}}" data-copywriter="{{item.copywriter}}">
+    <view wx:if="{{item.picUrl}}">
+      <image src="{{item.picUrl}}" class="music_img"></image>
+    </view>
+    <view class="music_text">{{item.name}}</view>
+  </view>
+</view>
+<view class="Load" wx:if="{{cion}}">
+  <van-loading color="#1989fa" class="Loading">加载中...</van-loading>
+</view>

@@ -1,0 +1,107 @@
+<view class="shell">
+  <image src="{{picUrl}}" class="shell_backgroundpicture"></image>
+  <view class="tltie_shell">
+    <view>
+      <image src="../../img/icon18.png" class="tltie_img" bindtap="goreturn"></image>
+    </view>
+    <view class="list">
+      <view class="text">电台</view>
+    </view>
+  </view>
+
+  <view class="station_shell">
+    <view class="station_left">
+      <view class="text_name">{{name}}</view>
+      <view class="text_Subscribe">{{subCount}}人已订阅</view>
+    </view>
+    <view class="station_right">
+      <view>
+        <image src="../../img/xingxing.png" class="station_img"></image>
+      </view>
+      <view class="Subscribe_text">订阅</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="Programdetails">
+  <view>
+    <text class="details {{selectionnumber==1?'Choice':''}}" bindtap="Choice" data-Choice="1">详情</text>
+  </view>
+  <view>
+    <view>
+      <text class="program {{selectionnumber==2?'Choice':''}}" bindtap="Choice" data-Choice="2">节目</text>
+      <text class="program_sum">123</text>
+    </view>
+  </view>
+</view>
+
+<!-- 详情 -->
+<view wx:if="{{selectionnumber==1}}">
+  <view class="anchor">主播</view>
+  <view class="avatarUrl">
+    <image src="{{avatarUrl}}" class="avatarUrl_img"></image>
+    <view class="nickname_text">{{nickname}}</view>
+  </view>
+  <view class="briefintroduction">电台类容介绍</view>
+  <view class="category">
+    <view class="category_classification">分类：</view>
+    <view class="category_text">{{category}}</view>
+  </view>
+  <view class="desc">{{desc}}</view>
+  <view class="comment">精彩评论</view>
+  <view wx:for="{{commentDatas}}" wx:key="{{index}}" class="commentDatas_for">
+    <view class="capacity">
+      <image src="{{item.userProfile.avatarUrl}}" class="Headportrait"></image>
+      <view class="nickname">{{item.userProfile.nickname}}</view>
+    </view>
+    <view class="content">{{item.content}}</view>
+    <view class="author">——{{item.programName}}</view>
+    <view class="bottom"></view>
+  </view>
+  <view class="plus"></view>
+</view>
+
+
+
+
+<!-- 节目 -->
+<view wx:else>
+  <view class="program_top">
+    <view class="periods">共{{count}}期</view>
+    <view class="function">
+      <view class="function_img">
+        <image src="../../img/icon20.png" class="notice"></image>
+        <view class="sort">排序</view>
+      </view>
+      <view class="news_img">
+        <image src="../../img/icon22.png" class="news"></image>
+        <view class="Multipleselection">多选</view>
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{programs}}" wx:key="{{index}}" class="programs_for" bindtap="play" data-index="{{index}}">
+    <view class="programs_left">
+      <image wx:if="{{indexof === index}}" src="../../img/icon23.png" class="notice_icon"></image>
+      <view wx:else class="index">{{index+1}}</view>
+      <view class="description_shell">
+        <view class="description">{{item.description}}</view>
+        <view class="createTime_shell">
+          <view class="createTime">{{item.createTime}}</view>
+          <view class="listenerCount_shell">
+            <image src="../../img/icon24.png" class="listenerCount_img"></image>
+            <view class="listenerCount">{{item.listenerCount}}</view>
+          </view>
+          <view class="duration_shell">
+            <image src="../../img/icon25.png" class="duration_img"></image>
+            <view class="duration">{{item.duration}}</view>
+          </view>
+          <view></view>
+        </view>
+      </view>
+    </view>
+    <view class="hide">
+      <image src="../../img/diandian.png" class="hide_img"></image>
+    </view>
+  </view>
+</view>

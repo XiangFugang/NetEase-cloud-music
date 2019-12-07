@@ -1,0 +1,134 @@
+.shell {
+  display: flex;
+  justify-content: space-around;
+}
+
+.adfvbrfaa {
+  background-color: #ccc;
+  border-radius: 40rpx;
+  height: 70rpx;
+}
+
+.text {
+  padding: 5rpx 20rpx 0 0;
+}
+
+.search {
+  font-size: 38rpx;
+}
+
+.imge {
+  padding: 30rpx 30rpx 0 0;
+}
+
+.van-search__content {
+  background-color: #fff !important;
+}
+
+.banners {
+}
+
+.imges {
+  width: 90%;
+  margin-left: 5%;
+  height: 300rpx;
+  border-radius: 15rpx;
+}
+
+.menu_shell {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.menu_dv {
+  position: relative;
+  background-color: #f45;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.menu_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25rpx;
+  margin-top: -25rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.menu_text {
+  padding-top: 15rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.Recommend_shell {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 22rpx;
+}
+
+.Recommend_sheet {
+  font-weight: 700;
+  font-size: 35rpx;
+}
+
+.Recommend_square {
+  border: 2rpx solid #999;
+  font-size: 27rpx;
+  border-radius: 22rpx;
+  padding: 6rpx 15rpx;
+}
+
+.music_shell {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.music_dv {
+  padding-bottom: 40rpx;
+}
+
+.music_img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 12rpx;
+}
+
+.music_text {
+  font-size: 27rpx;
+  width: 200rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.Newdish {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 24rpx;
+}
+
+.Newdish_Newdish {
+  padding-right: 10rpx;
+  font-size: 30rpx;
+}
+
+.Newdish_music {
+  font-size: 27rpx;
+  border-left: 2rpx solid #999;
+  padding-left: 10rpx;
+}
+
+.Newdish_moll {
+  font-size: 27rpx;
+  border: 2rpx solid #999;
+  padding: 6rpx 15rpx;
+  border-radius: 25rpx;
+}

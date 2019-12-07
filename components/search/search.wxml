@@ -1,0 +1,114 @@
+<view>
+  <view wx:if="{{songCount}}">
+    <!-- 搜索框 -->
+    <view class="search_shell">
+      <view class="icon">
+        <image src="../../img/icon18.png" class="icon18" bindtap="goReturn"></image>
+      </view>
+      <view class="search">
+        <input class="weui-input" focus='true' maxlength="10" bindinput="bindKeyInput" placeholder="{{placeholder}}" bindconfirm="complete" value="{{value}}" />
+      </view>
+      <view class="icon1">
+        <image src="../../img/icon26.png" class="icon26"></image>
+      </view>
+    </view>
+    <!-- 历史记录 -->
+    <view class="History_shell">
+      <view class="History_text">历史记录</view>
+      <view class="History_icon">
+        <image class="History_img" src="../../img/icon27.png" bindtap="Eliminate"></image>
+      </view>
+    </view>
+    <!-- 记录 -->
+    <scroll-view scroll-x="true" style="width: 90%;margin:0 auto">
+      <view class="History_map">
+        <view wx:for="{{arr}}" wx:key="{{index}}" class="History" bindtap="oncilck" data-text="{{item}}">{{item}}</view>
+      </view>
+    </scroll-view>
+    <!-- 热搜榜 -->
+    <view class="Hotsearch">热搜榜</view>
+    <!-- 热搜类容 -->
+    <view class="Hotsearch_shell">
+      <view wx:for="{{data}}" wx:key="{{index}}" class="Hotsearch_for">
+        <view class="Hotsearch_left">
+          <view class="Hotsearch_index {{(index==0 ||index==1 ||index==2)?'color':''}}">{{index+1}}</view>
+          <view class="Hotsearch_name">
+            <view class="Hotsearch_searchWord">
+              <view class="Hotsearch_text {{(index==0 ||index==1 ||index==2)?'weight':''}}">{{item.searchWord}}</view>
+              <text class="Hotsearch_HOT" wx:if="{{item.iconType==1}}">HOT</text>
+              <text class="Hotsearch_NEW" wx:if="{{item.iconType==2}}">NEW</text>
+            </view>
+            <view class="Hotsearch_content">{{item.content}}</view>
+          </view>
+        </view>
+        <view class="Hotsearch_right">{{item.score}}</view>
+      </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+  <view wx:else>
+    <!-- 搜索框 -->
+    <view class="search_shell">
+      <view class="icon">
+        <image src="../../img/icon18.png" class="icon18" bindtap="goReturn"></image>
+      </view>
+      <view class="search">
+        <input class="weui-input" focus='true' maxlength="10" bindinput="bindKeyInput" placeholder="{{placeholder}}" bindconfirm="complete" value="{{value}}" />
+      </view>
+      <view class="icon1">
+        <image src="../../img/icon26.png" class="icon26"></image>
+      </view>
+    </view>
+    <!-- 头部导航栏 -->
+    <van-tabs active="{{ name }}" bind:click="gotoclick">
+      <van-tab title="{{item}}" wx:for="{{Navigation}}" wx:key="{{index}}" name="{{item}}">
+        <!-- 综合 -->
+        <view wx:if="{{type ==1018}}">
+          <comprehensive result="{{result}}"></comprehensive>
+        </view>
+        <!-- 单曲 -->
+        <view wx:if="{{type == 1}}">
+          <single></single>
+        </view>
+        <!-- 云村 -->
+        <view wx:if="{{type == 1004}}">
+          <yun-cun></yun-cun>
+        </view>
+        <!-- 视频 -->
+        <view wx:if="{{type == 1014}}">
+          <video></video>
+        </view>
+        <!--歌手  -->
+        <view wx:if="{{type ==100}}">
+          <singer></singer>
+        </view>
+        <!-- 专辑 -->
+        <view wx:if="{{type == 10}}">
+          <album></album>
+        </view>
+        <!-- 歌单 -->
+        <view wx:if="{{type == 1000}}">
+          <song-sheet></song-sheet>
+        </view>
+        <!-- 主播电台 -->
+        <view wx:if="{{type == 1009}}">
+          <anchor-station></anchor-station>
+        </view>
+        <!-- 用户 -->
+        <view wx:if="{{type == 1002}}">
+          <subscriber></subscriber>
+        </view>
+      </van-tab>
+    </van-tabs>
+
+
+
+
+  </view>
+</view>

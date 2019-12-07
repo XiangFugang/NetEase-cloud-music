@@ -1,0 +1,98 @@
+.single_shell {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 40rpx 0 40rpx;
+}
+
+.single_text {
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.single_img {
+  display: flex;
+  border: 2rpx solid #999;
+  padding: 0 15rpx;
+  border-radius: 30rpx;
+  line-height: 42rpx;
+}
+
+.single_icon {
+}
+
+.img {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.plye {
+  font-size: 30rpx;
+  padding-left: 15rpx;
+}
+
+.song_sheet_shell {
+  padding: 35rpx 20rpx 0 40rpx;
+}
+
+.song_sheet-for {
+  padding: 30rpx 0 10rpx 0;
+}
+
+.song_sheet_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song_sheet_text {
+}
+
+.song_sheet_name {
+  font-size: 33rpx;
+  max-width: 500rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* color: ;/ */
+}
+
+.song_sheet_cf {
+  font-size: 25rpx;
+  color: #999;
+}
+
+.icon {
+  display: flex;
+}
+
+.icon_img {
+  margin-right: 30rpx;
+}
+
+.icon_img_1 {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  padding-top: 50rpx;
+}
+
+.more_text {
+  font-size: 25rpx;
+  color: #999;
+  line-height: 54rpx;
+  margin-right: 4rpx;
+}
+
+.more_icon {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.directseeding {
+  font-size: 35rpx;
+  font-weight: 700;
+  padding: 50rpx 0 0 40rpx;
+}

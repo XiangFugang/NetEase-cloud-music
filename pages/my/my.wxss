@@ -1,0 +1,151 @@
+.shell {
+  text-align: center;
+  margin-top: 50%;
+}
+
+.Tips {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #f45;
+}
+
+.shell_botton {
+  position: relative;
+}
+
+.botton {
+  margin-top: 30rpx;
+  height: 50rpx;
+  background-color: #36f;
+  width: 150rpx;
+  color: #fff;
+  padding: 10rpx 20rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -95rpx;
+  border-radius: 10rpx;
+}
+
+.personal_shell {
+  background-size: contain;
+}
+
+.personal {
+  padding: 60rpx 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal_text {
+  display: flex;
+  padding-left: 20rpx;
+}
+
+.avatarUrl {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.nickname_text {
+  padding: 25rpx 0 0 20rpx;
+}
+
+.nickname {
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.grade {
+  margin-top: 20rpx;
+  padding: 6rpx 25rpx;
+  font-size: 25rpx;
+  border-radius: 25rpx;
+  display: inline-block;
+  background-color: #696969;
+  color: #d3d3d3;
+}
+
+.signed_text {
+  padding: 20rpx 40rpx 0 0;
+}
+
+.signed {
+  border-radius: 25rpx;
+  padding: 6rpx 25rpx;
+  font-size: 25rpx;
+  color: #d3d3d3;
+  background-color: #696969;
+  letter-spacing: 8rpx;
+}
+
+.information {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50rpx;
+  padding-bottom: 70rpx;
+}
+
+.dynamic_number {
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.dynamic_text {
+  color: #d3d3d3;
+  font-size: 35rpx;
+}
+
+.follow_number {
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.follow_text {
+  color: #d3d3d3;
+  font-size: 35rpx;
+}
+
+.Fans_number {
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.Fans_text {
+  color: #d3d3d3;
+  font-size: 35rpx;
+}
+.data_number{
+  padding-top: 8rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.data_img {
+ 
+  padding-left: 45rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.data_dete {
+  color: #d3d3d3;
+  font-size: 35rpx;
+  padding: 0 0 10 0rpx;
+}
+.blank{
+  padding-top: 200rpx;
+  background-color: #fff;
+  margin-top: -50rpx;
+  border-radius: 40rpx 40rpx 0 0;
+}
+.Signout{
+  text-align: center;
+  justify-content: center;
+  /* background-color: #FF976A; */
+}
+.Signout_text{
+  padding: 20rpx 15rpx;
+  border-radius: 12rpx;
+  background-color: #FF976A;
+  color: #fff;
+}

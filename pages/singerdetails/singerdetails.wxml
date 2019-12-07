@@ -1,0 +1,32 @@
+<view class="name">{{name}}</view>
+<view class="shell_icon">
+  <image src="{{picUrl}}" class="picUrl_img"></image>
+  <view class="Randomplay">
+    <view>
+      <image src="../../img/bofang.png" class="Randomplay_icon"></image>
+    </view>
+    <view class="Randomplay_text">随机播放全部</view>
+  </view>
+</view>
+
+
+
+
+
+
+<view class="songsheet_shell">
+  <view wx:for="{{hotSongs}}" wx:key="{{index}}" class="songsheet_for" catchtap="toplay" data-ids="{{item.id}}">
+    <view class="songsheet_left">
+      <view class="songsheet_index">{{index+1}}</view>
+      <view class="songsheet_text">
+        <view class="Songname_text">{{item.name}}</view>
+        <view class="Creators_text">{{item.al.name}}</view>
+      </view>
+    </view>
+    <view>
+      <image src="../../img/icon19.png" wx:if="{{playIcon && sum === index}}" class="songsheet_icon" catchtap="play" data-id="{{item.id}}" data-name="{{item.name}}" data-icon="{{item.al. picUrl}}" data-index="{{index}}"></image>
+      <image src="../../img/bofang.png" wx:else class="songsheet_icon" catchtap="play" data-id="{{item.id}}" data-name="{{item.name}}" data-icon="{{item.al. picUrl}}" data-index="{{index}}"></image>
+
+    </view>
+  </view>
+</view>

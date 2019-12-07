@@ -1,0 +1,81 @@
+.name {
+  text-align: center;
+  font-size: 40rpx;
+  color: black;
+  line-height: 70rpx;
+}
+
+.shell_icon {
+  position: relative;
+}
+
+.picUrl_img {
+  width: 100%;
+}
+
+.Randomplay {
+  padding: 10rpx 0 0 50rpx;
+  display: flex;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  width: 300rpx;
+  background-color: #fff;
+  position: absolute;
+  bottom: 100rpx;
+  left: 50%;
+  margin-left: -200rpx;
+}
+
+.Randomplay_icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.Randomplay_text {
+  padding-left: 30rpx;
+}
+
+.songsheet_shell {
+  padding-top: 30rpx;
+}
+
+.songsheet_for {
+  padding: 20rpx 40rpx 10rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.songsheet_left {
+  display: flex;
+}
+
+.songsheet_index {
+  color: #999;
+}
+
+.songsheet_text {
+  padding-left: 30rpx;
+}
+
+.Songname_text {
+  margin-top: -10rpx;
+  font-size: 35rpx;
+  max-width: 330rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Creators_text {
+  font-size: 25rpx;
+  color: #999;
+  max-width: 330rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.songsheet_icon {
+  width: 40rpx;
+  height: 40rpx;
+}

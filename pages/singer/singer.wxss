@@ -1,0 +1,34 @@
+.van-ellipsis{
+overflow: visible!important;
+white-space:pnormal !important;
+}
+.van-tab{
+  box-sizing: inherit !important;
+}
+.letter_dv{
+  display: flex;
+  white-space: nowrap;
+}
+.letter_index{
+  display: flex;
+  display: inline-block;
+  width: 40rpx;
+  text-align: center;
+}
+.singer{
+  padding-left: 20rpx;
+}
+.singer_dv{
+  display: flex;
+}
+.singer_img{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.singer_name{
+  font-size: 35rpx;
+  padding-left: 20rpx;
+  line-height: 150rpx;
+
+}

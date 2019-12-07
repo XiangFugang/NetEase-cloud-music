@@ -1,0 +1,319 @@
+.shell {
+  position: relative;
+  z-index: 0;
+}
+
+.tltie_shell {
+  position: absolute;
+  top: 80rpx;
+  left: 20rpx;
+  display: flex;
+}
+
+.tltie_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.list {
+  padding-left: 30rpx;
+}
+
+.text {
+  color: black;
+}
+
+.station_shell {
+  position: absolute;
+  bottom: 70rpx;
+  left: 0rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.station_left {
+  padding: 0 0 0 40rpx;
+}
+
+.text_name {
+  font-size: 35rpx;
+  color: #fff;
+}
+
+.text_Subscribe {
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.station_right {
+  margin-right: 40rpx;
+  margin-top: 20rpx;
+  display: flex;
+  height: 40rpx;
+  background-color: #f45;
+  padding: 10rpx 45rpx;
+  border-radius: 30rpx;
+}
+
+.station_img {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.Subscribe_text {
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.Programdetails {
+  margin-top: -55rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  border-radius: 50rpx 50rpx 0 0;
+  border-bottom: 2rpx solid #999;
+  padding-bottom: 20rpx;
+}
+
+.details {
+  font-size: 35rpx;
+  font-weight: 700;
+  padding-bottom: 18rpx;
+}
+
+.program {
+  font-size: 35rpx;
+  font-weight: 700;
+  padding-bottom: 18rpx;
+}
+
+.program_sum {
+  margin-left: 4rpx;
+  font-size: 20rpx;
+  color: #999;
+}
+
+.Choice {
+  border-bottom: 6rpx solid #f45;
+  color: #f45;
+}
+
+.anchor {
+  font-size: 35rpx;
+  padding: 40rpx 0 40rpx 40rpx;
+}
+
+.avatarUrl {
+  display: flex;
+  padding: 0 0 40rpx 40rpx;
+}
+
+.avatarUrl_img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nickname_text {
+  padding: 25rpx 0 25rpx 40rpx;
+  font-size: 35rpx;
+}
+
+.briefintroduction {
+  padding: 20rpx 0 30rpx 40rpx;
+  font-size: 33rpx;
+}
+
+.category {
+  display: flex;
+  font-size: 27rpx;
+  padding-left: 40rpx;
+}
+
+.category_text {
+  border: 2rpx solid #f45;
+  font-size: 25rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  padding: 0rpx 15rpx;
+  color: #f45;
+}
+
+.desc {
+  font-size: 27rpx;
+  padding: 10rpx 0 0 40rpx;
+}
+
+.comment {
+  padding: 50rpx 0 40rpx 40rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.capacity {
+  padding: 40rpx 0 30rpx 40rpx;
+  display: flex;
+}
+
+.Headportrait {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nickname {
+  font-size: 35rpx;
+  padding: 20rpx 0 0 20rpx;
+}
+
+.content {
+  font-size: 33rpx;
+  padding: 10rpx 0 10rpx 80rpx;
+}
+
+.author {
+  font-size: 27rpx;
+  color: #999;
+  padding: 40rpx 0 40rpx 80rpx;
+}
+
+.bottom {
+  height: 4rpx;
+  border-bottom: 1rpx solid #e0d7d7;
+  margin-left: 80rpx;
+}
+
+.plus {
+  height: 100rpx;
+}
+
+.program_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 20rpx 0 20rpx;
+}
+
+.periods {
+  font-size: 35rpx;
+  font-weight: 700;
+}
+
+.function {
+  display: flex;
+}
+
+.function_img {
+  display: flex;
+}
+
+.notice {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.sort {
+  padding-left: 10rpx;
+  font-size: 30rpx;
+  margin-right: 40rpx;
+}
+
+.news_img {
+  display: flex;
+  /* padding-top: 5rpx; */
+}
+
+.news {
+  padding-top: 5rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.Multipleselection {
+  padding-left: 15rpx;
+  font-size: 30rpx;
+}
+
+.programs_for {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 0 20rpx 40rpx;
+}
+
+.programs_left {
+  display: flex;
+}
+
+.index {
+  font-size: 30rpx;
+  color: #999;
+  padding-top: 20rpx;
+  width: 35rpx;
+}
+
+.notice_icon {
+  padding-top: 20rpx;
+  width: 35rpx;
+  height: 35rpx;
+}
+
+.description_shell {
+  padding: 0  0 0 30rpx;
+}
+
+.description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 500rpx;
+  font-size: 35rpx;
+}
+
+.createTime_shell {
+  display: flex;
+  padding-top: 10rpx;
+}
+
+.createTime {
+  font-size: 20rpx;
+}
+
+.listenerCount_shell {
+  display: flex;
+}
+
+.listenerCount_img {
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  width:25rpx;
+  height: 25rpx;
+}
+
+.listenerCount {
+  font-size: 20rpx;
+}
+
+.duration_shell {
+  display: flex;
+}
+
+.duration_img {
+  width:25rpx;
+  height: 25rpx;
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+}
+
+.duration {
+   font-size: 20rpx;
+}
+
+.hide{
+  padding-right: 10rpx;
+
+}
+.hide_img{
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,12 @@
+ <!-- 宫格 -->
+ <view class="music_shell">
+    <view wx:for="{{result}}" wx:key="{{index}}" class="music_dv" bindtap="goTosongsheet" data-id="{{item.id}}" data-copywriter="{{item.copywriter}}">
+      <view wx:if="{{item.picUrl}}">
+        <image src="{{item.picUrl}}" class="music_img"></image>
+      </view>
+      <view class="music_text">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="Load" wx:if="{{cion}}">
+    <van-loading color="#1989fa" class="Loading">加载中...</van-loading>
+  </view>
